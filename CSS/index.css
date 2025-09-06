@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+body{
+    width: 100wh;
+    height: 100vh;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+.info{
+    padding-top: 5px;
+    display: flex;
+    margin-left: 100px;
+    gap: 40px;
+}
+
+
+
+.fa-envelope, .fa-map{
+    color: orangered;
+    margin-right:5px ;
+}
+
+.icons{
+    padding-top: 5px;
+    display: flex;
+    margin-right: 100px;
+    justify-content: end;
+    gap: 30px;
+    font-size: 1.5em;
+    color: gray;
+    transition: color 1s ease;
+}
+
+
+.icons>div:hover{
+    color: orangered;
+    cursor: pointer;
+}
+
