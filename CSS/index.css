@@ -18,10 +18,9 @@ body{
 
 }
 .info{
-    padding-top: 5px;
     display: flex;
-    margin-left: 100px;
-    gap: 40px;
+    margin-left: 50px;
+    gap: 20px;
 }
 
 
@@ -36,8 +35,8 @@ body{
     display: flex;
     margin-right: 100px;
     justify-content: end;
-    gap: 30px;
-    font-size: 1.5em;
+    gap: 20px;
+    font-size: 1.2em;
     color: gray;
     transition: color 1s ease;
 }
@@ -46,5 +45,107 @@ body{
 .icons>div:hover{
     color: orangered;
     cursor: pointer;
+}
+
+.nav-list{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-lists{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 140px;
+    
+}
+
+.logo{
+    margin-left:100px;
+
+}
+
+.items {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+li{
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.5s ease;
+    
+}
+
+.cal-button{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 180px;
+    height: 30px;
+    background-color: black;
+    border-radius: 25px;
+    gap: 10px;
+}
+
+.icon{
+    background-color:orangered;
+    border-radius: 25px;
+    color: white;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    font-size: 1.1em;
+}
+.cal-button span{
+    color: white;
+}
+
+.nav-list:hover{
+    cursor: pointer;
+}
+
+li>a:hover{
+    color: orangered;
+}
+
+.banner{
+    position: relative;
+
+}
+
+.ban img{
+    margin-top: 20px;
+    width: 98vw;
+    height: 700px;
+    overflow: hidden;
+
+}
+
+.content{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+
+}
+
+.title{
+    background-color: white;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+.content h2{
+    font-size: 3em;
+    font-weight: bold;
 }
 
