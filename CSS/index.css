@@ -5,8 +5,8 @@
 }
 
 body{
-    width: 100wh;
-    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
 .header{
@@ -15,7 +15,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 10px;
-
+   
 }
 .info{
     display: flex;
@@ -52,6 +52,12 @@ body{
     grid-template-columns: 1fr 2fr;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    height: 80px;
+    width: 1500px;
 
 }
 .nav-lists{
@@ -145,9 +151,11 @@ li>a:hover{
 }
 
 .content h2{
+    color: white;
     font-size: 3em;
     font-weight: bold;
 }
+
 
 .featured{
     display: grid;
@@ -158,11 +166,11 @@ li>a:hover{
 
 .banner1 img{
     width: 500px;
-    height: 450px;
+    height: 500px;
 }
 
 .content1{
-    height: 450px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -172,6 +180,7 @@ li>a:hover{
     font-size: 2.5em;
     font-weight: bold;
 }
+
 .accordian{
     border-radius: 5px;
 }
@@ -181,8 +190,6 @@ li>a:hover{
     padding: 10px;
     border:2px solid lightslategray;
     border-radius: 5px;
-
-
 }
 
 .titles:hover{
@@ -196,7 +203,7 @@ li>a:hover{
     position: relative;
 }
 
-.subcontent {
+.subcontent{
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.6s ease;
@@ -220,14 +227,13 @@ a span{
 }
 
 .details{
-    height: 450px;
+    height: 500px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     border-radius: 5px;
     border: 1px solid grey;
-    background: whitesmoke;
-    padding: 30px;
+    background: white;
+    padding: 20px;
 
 }
 
@@ -235,7 +241,6 @@ a span{
     display: grid;
     grid-template-columns: 30% 70%;
     margin-top: 5px;
-    
 
 }
 
@@ -243,21 +248,18 @@ a span{
     font-size: 2em;
     color: orangered;
     margin-top: 10px;
-
 }
 
 .contract i{
     font-size: 2em;
     color: orangered;
     margin-top: 10px;
-
 }
 
 .payment i{
     font-size: 2em;
     color: orangered;
     margin-top: 10px;
-
 }
 
 .safety i{
@@ -265,3 +267,101 @@ a span{
     color: orangered;
     margin-top: 10px;
 }
+
+
+    .videoview{
+    width: 100wh;
+    height: 60vh;
+    margin-top: 80px;
+    background: url(../Images/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+.video-head{
+    position: absolute;
+    left: 45%;
+    color: red;
+    top: 20px;
+}
+
+.video-content{
+    left: 38%;
+    position: absolute;
+    top: 50px;
+}
+
+.video-content h2{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+}
+.video-banner img{
+    width: 1100px;
+    height: 500px;
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    border-radius: 10px;
+}
+
+.video-icon{
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 85%;
+    font-size: 3em;
+    cursor: pointer;
+}
+.video-icon i{
+    background-color: orangered;
+    padding: 6px;
+    border-radius: 50px;
+}
+
+.cards{
+    margin-top: 250px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+
+    
+
+}
+
+.card-box{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 221, 181);
+    border-radius:10px ;
+    width: 250px;
+    height: 90px;
+    position: relative;
+}
+
+.box-content{
+    font-size: 2em;
+    font-weight: bold;
+    color: orangered;
+}
+
+.box-description{
+    font-weight: bold;
+}
+
+.circle{
+    background-color: orangered;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    position: absolute;
+    right: -13px;
+    top: -13px;
+}
+
+
