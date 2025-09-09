@@ -444,3 +444,57 @@ a span{
     flex-direction: column;
     gap: 15px;
 }
+
+.properties{
+    margin-top: 100px;
+}
+
+.prop-main h5{
+    display: flex;
+    justify-content: center;
+    color: orangered;
+    margin-bottom: 20px;
+
+}
+
+.prop-sub h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 50px;
+
+}
+
+.card-side{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-side p{
+    background-color: rgb(250, 155, 118);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.card-side span{
+    color: orangered;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.card-but{
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+.card-details{
+    display: flex;
+    gap: 20px;
+}
+
+.card-but button:hover{
+    background-color: orangered;
+
+}
