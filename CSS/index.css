@@ -322,7 +322,7 @@ a span{
 }
 
 .cards{
-    margin-top: 250px;
+    margin-top: 300px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
@@ -364,4 +364,83 @@ a span{
     top: -13px;
 }
 
+.bestdeal{
+    margin-top: 100px;
+    padding: 30px;
 
+}
+.best-tit h6{
+    color: red;
+}
+
+.best-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.best-title h2{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.best-button{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    gap: 20px;
+}
+
+.best-but{
+    background-color: black;
+    height: 40px;
+    width: 120px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 5px;
+
+}
+
+.best-but .orange{
+    background-color: orangered;
+}
+
+.best-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    height: 400px;
+}
+
+.best-details{
+    background-color: #dfe4ea;
+    border-radius: 5px;
+
+}
+
+.flat{
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    padding: 20px;
+}
+
+.flat h4{
+    font-weight: bold;
+    
+}
+
+.best-ban img{
+    height: 400px;
+    width: 600px;
+    border-radius: 5px;
+}
+
+.best-description{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
