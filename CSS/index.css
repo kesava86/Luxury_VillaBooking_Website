@@ -403,10 +403,6 @@ a span{
 
 }
 
-.best-but .orange{
-    background-color: orangered;
-}
-
 .best-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
