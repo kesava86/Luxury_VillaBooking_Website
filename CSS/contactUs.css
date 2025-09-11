@@ -155,6 +155,79 @@ li>a:hover{
     left: 39%;
 }
 
+
+.contactus-content{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+.contactus-description p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contactus-main h6{
+    color: red;
+}
+.contactus-sub h3{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.contactus-details{
+    display: grid;
+    gap: 20px;
+    width: 300px;
+    margin-top: 30px;
+
+
+}
+
+.contactus-info{
+    display: flex;
+    gap: 30px;
+    background-color: whitesmoke;
+    padding-left: 20px;
+    padding-right:20px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+.contactus-info span{
+    font-size: 2em;
+}
+
+.contactus-form{
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+}
+.contactus-form .btn{
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-right:15px;
+    border: none;
+    transition: background-color 0.5s ease;
+}
+
+.contactus-form .btn:hover{
+    background-color: orangered;
+    border: none;
+}
+.contactus-map{
+    margin-top: 100px;
+}
+.contactus-google iframe
+{
+    width: 100%;
+    height: 600px;
+}
+
+
 .footer{
     margin-top:100px ;
     background-color: black;

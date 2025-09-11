@@ -552,6 +552,19 @@ a span{
     border-radius: 5px;
 }
 
+.contact-form .btn{
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-right:15px;
+    border: none;
+    transition: background-color 0.5s ease;
+
+}
+
+.contact-form .btn:hover{
+    background-color: orangered;
+    border: none;
+}
 .footer{
     margin-top:350px ;
     background-color: black;
