@@ -15,7 +15,6 @@ body{
     justify-content: center;
     align-items: center;
     padding: 10px;
-   
 }
 .info{
     display: flex;
@@ -121,6 +120,234 @@ li a{
 
 li>a:hover{
     color: orangered;
+}
+
+
+.property-ban{
+    position: relative;
+}
+
+
+.property-ban img{
+    margin-top: 20px;
+    width: 1500px;
+}
+
+.prop-back p{
+    background-color: white;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 42%;
+
+}
+
+.property-title h2{
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+}
+
+.propertydetails{
+    margin: 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    justify-content: space-around;
+    
+}
+
+
+.details{
+    height: 490px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background: white;
+    padding: 20px;
+
+}
+
+.distance, .contract, .payment, .safety{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-top: 10px;
+
+}
+
+.distance i{
+    font-size: 2em;
+    color: orangered;
+    margin-top: 10px;
+}
+
+.contract i{
+    font-size: 2em;
+    color: orangered;
+    margin-top: 10px;
+}
+
+.payment i{
+    font-size: 2em;
+    color: orangered;
+    margin-top: 10px;
+}
+
+.safety i{
+    font-size: 2em;
+    color: orangered;
+    margin-top: 10px;
+}
+
+.propertydetail-content{
+    max-width: 1024px;
+}
+
+.propertycontent-but{
+    background-color: lightcoral;
+    width: 100px;
+    border-radius: 5px;
+    
+}
+
+.propertycontent-but p{
+    cursor: pointer;
+    padding-left: 5px;
+    padding-bottom: 5px ;
+    font-weight: 400;
+
+}
+
+.accordian{
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.titles{
+    display: block;
+    padding: 10px;
+    border:2px solid lightslategray;
+    border-radius: 5px;
+}
+
+.titles:hover{
+    background-color: whitesmoke;
+}
+
+
+.item a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.subcontent{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.6s ease;
+
+}
+
+.subcontent p{
+    padding: 10px;
+}
+
+.subcontent:target{
+    max-height: 110px;
+    border: solid whitesmoke;
+    border-radius: 5px;
+
+}
+
+a span{
+    position: absolute;
+    right: 10px;
+}
+
+
+.bestdeal{
+    margin-top: 100px;
+    padding: 30px;
+
+}
+.best-tit h6{
+    color: red;
+}
+
+.best-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.best-title h2{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.best-button{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    gap: 20px;
+}
+
+.best-but{
+    background-color: black;
+    height: 40px;
+    width: 120px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 5px;
+
+}
+
+.best-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    height: 400px;
+}
+
+.best-details{
+    background-color: #dfe4ea;
+    border-radius: 5px;
+
+}
+
+.flat{
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    padding: 20px;
+}
+
+.flat h4{
+    font-weight: bold;
+    
+}
+
+.best-ban img{
+    height: 400px;
+    width: 600px;
+    border-radius: 5px;
+}
+
+.best-description{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .footer{
