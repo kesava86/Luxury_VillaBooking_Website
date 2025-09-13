@@ -3,33 +3,26 @@
     padding: 0;
     box-sizing: border-box ;
 }
-
 body{
     max-width: 100vw;
     max-height: 100vh;
 }
-
 .header{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     padding: 10px;
-   
 }
 .info{
     display: flex;
     margin-left: 50px;
     gap: 20px;
 }
-
-
-
 .fa-envelope, .fa-map, .fa-phone{
     color: orangered;
     margin-right:5px ;
 }
-
 .icons{
     padding-top: 5px;
     display: flex;
@@ -40,58 +33,76 @@ body{
     color: gray;
     transition: color 1s ease;
 }
-
-
 .icons>div:hover{
     color: orangered;
     cursor: pointer;
 }
 
-.nav-list{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    justify-content: center;
-    align-items: center;
+.navbar {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10000;
     background-color: white;
-    height: 80px;
-    width: 1500px;
-
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
 }
-.nav-lists{
+
+.nav-list {
     display: flex;
-    margin-top: 10px;
-    margin-left: 140px;
-    
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+    width: 100%;
 }
 
-.logo{
-    margin-left:100px;
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.8em;
 }
 
 .items {
     display: flex;
-    justify-content: flex-start;
-
+    gap: 30px;
 }
 
-li{
+li {
     list-style-type: none;
-    margin-right: 50px;
 }
 
-li a{
+li a {
     text-decoration: none;
     color: black;
     font-weight: 500;
-    transition: color 0.5s ease;
-    
+    font-size: 1.2em;
+    transition: color 0.3s ease;
 }
 
-.cal-button{
+li a:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+.cal-button {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -100,10 +111,11 @@ li a{
     background-color: black;
     border-radius: 25px;
     gap: 10px;
+    cursor: pointer;
 }
 
-.icon{
-    background-color:orangered;
+.icon {
+    background-color: orangered;
     border-radius: 25px;
     color: white;
     width: 40px;
@@ -111,28 +123,93 @@ li a{
     text-align: center;
     font-size: 1.1em;
 }
-.cal-button span{
+
+.cal-button span {
     color: white;
 }
 
-.nav-list:hover{
+.menu-icon {
+    display: none;
+    font-size: 1.8em;
     cursor: pointer;
 }
 
-li>a:hover{
-    color: orangered;
+/* Hide the checkbox */
+#menu-toggle {
+    display: none;
 }
+
+/* Responsive Behavior Below 991px: Reduce font size */
+@media (max-width: 991px) {
+    li a {
+        font-size: 1em;
+    }
+    .cal-button{
+        font-size: 0.8em;
+    }
+}
+
+/* Below 768px: Show Hamburger and hide normal nav */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-lists {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        background-color: #f8f9fa;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .nav-lists ul.items {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-lists li a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav-lists li a:hover {
+        background-color: #ddd;
+        color: orangered;
+    }
+
+    .cal-button {
+        margin-top: 15px;
+    }
+
+    #menu-toggle:checked ~ .nav-lists {
+        display: flex;
+    }
+}
+
+/* Smallest Screens - Below 576px */
+@media (max-width: 576px) {
+    .nav-lists li a {
+        font-size: 1em;
+    }
+
+}
+
+
 
 .properties-ban{
     position: relative;
 }
-
-
 .properties-ban img{
     margin-top: 20px;
     width: 1500px;
 }
-
 .prop-back p{
     background-color: white;
     display: flex;
@@ -142,9 +219,7 @@ li>a:hover{
     position: absolute;
     top: 30%;
     left: 45%;
-
 }
-
 .properties-title h2{
     font-size: 3em;
     color: white;
@@ -153,18 +228,15 @@ li>a:hover{
     top: 45%;
     left: 41%;
 }
-
 .best-head{
     margin-top: 50px;
 }
-
 .best-button{
     display: flex;
     justify-content: center;
     align-items:center ;
     gap: 20px;
 }
-
 .best-but{
     background-color: black;
     height: 40px;
@@ -175,38 +247,27 @@ li>a:hover{
     align-items: center;
     font-weight: 500;
     border-radius: 5px;
-
 }
-
-
-
-
 .properties{
     margin-top: 50px;
 }
-
 .prop-main h5{
     display: flex;
     justify-content: center;
     color: orangered;
     margin-bottom: 20px;
-
 }
-
 .prop-sub h2{
     display: flex;
     justify-content: center;
     font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 50px;
-
 }
-
 .card-side{
     display: flex;
     justify-content: space-between;
 }
-
 .card-side p{
     background-color: rgb(250, 155, 118);
     padding-left: 10px;
@@ -214,7 +275,6 @@ li>a:hover{
     border-radius: 5px;
     font-weight: 500;
 }
-
 .card-side span{
     color: orangered;
     font-size: 1.2em;
@@ -229,12 +289,9 @@ li>a:hover{
     display: flex;
     gap: 20px;
 }
-
 .card-but button:hover{
     background-color: orangered;
-
 }
-
 .footer{
     margin-top:100px ;
     background-color: black;

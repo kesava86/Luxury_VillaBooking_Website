@@ -46,51 +46,53 @@ body{
     cursor: pointer;
 }
 
-.nav-list{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    justify-content: center;
-    align-items: center;
+.navbar {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10000;
     background-color: white;
-    height: 80px;
-    width: 1500px;
-
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
 }
-.nav-lists{
+
+.nav-list {
     display: flex;
-    margin-top: 10px;
-    margin-left: 140px;
-    
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+    width: 100%;
 }
 
-.logo{
-    margin-left:100px;
 
+.logo {
+    font-weight: bold;
+    font-size: 1.8em;
 }
 
 .items {
     display: flex;
-    justify-content: flex-start;
-
+    gap: 30px;
 }
 
-li{
+li {
     list-style-type: none;
-    margin-right: 50px;
 }
 
-li a{
+li a {
     text-decoration: none;
     color: black;
     font-weight: 500;
-    transition: color 0.5s ease;
-    
+    font-size: 1.2em;
+    transition: color 0.3s ease;
 }
 
-.cal-button{
+li a:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+.cal-button {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -99,10 +101,11 @@ li a{
     background-color: black;
     border-radius: 25px;
     gap: 10px;
+    cursor: pointer;
 }
 
-.icon{
-    background-color:orangered;
+.icon {
+    background-color: orangered;
     border-radius: 25px;
     color: white;
     width: 40px;
@@ -110,16 +113,82 @@ li a{
     text-align: center;
     font-size: 1.1em;
 }
-.cal-button span{
+
+.cal-button span {
     color: white;
 }
 
-.nav-list:hover{
+.menu-icon {
+    display: none;
+    font-size: 1.8em;
     cursor: pointer;
 }
 
-li>a:hover{
-    color: orangered;
+/* Hide the checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Responsive Behavior Below 991px: Reduce font size */
+@media (max-width: 991px) {
+    li a {
+        font-size: 1em;
+    }
+    .cal-button{
+        font-size: 0.8em;
+    }
+}
+
+/* Below 768px: Show Hamburger and hide normal nav */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-lists {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        background-color: #f8f9fa;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .nav-lists ul.items {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-lists li a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav-lists li a:hover {
+        background-color: #ddd;
+        color: orangered;
+    }
+
+    .cal-button {
+        margin-top: 15px;
+    }
+
+    #menu-toggle:checked ~ .nav-lists {
+        display: flex;
+    }
+}
+
+/* Smallest Screens - Below 576px */
+@media (max-width: 576px) {
+    .nav-lists li a {
+        font-size: 1em;
+    }
+
 }
 
 
