@@ -42,23 +42,7 @@ body{
     cursor: pointer;
 }
 
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 10000;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 100%;
-}
 
-.nav-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    padding: 0 20px;
-    width: 100%;
-}
 
 .navbar {
     position: fixed;
@@ -67,7 +51,8 @@ body{
     width: 100%;
     z-index: 10000;
     background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.1);
+
 }
 
 .nav-list {
