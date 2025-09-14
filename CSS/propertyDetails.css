@@ -128,6 +128,67 @@ li a:hover {
     display: none;
 }
 
+
+
+.property-ban {
+    margin-top: 20px;
+    height: 60vh; /* Banner height relative to viewport */
+    overflow: hidden;
+}
+
+.property-ban img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.prop-back p {
+    font-size: 1rem;
+}
+
+.property-title h2 {
+    font-size: 3rem;
+}
+
+
+
+.propertydetails-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.property-image-col {
+    display: flex;
+}
+
+.property-img {
+    width: 100%;
+    height: 100%;
+    min-height: 500px; /* Adjust as needed */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.details {
+    border-radius: 5px;
+    border: 1px solid grey;
+    background: white;
+}
+
+.details i {
+    font-size: 2em;
+    color: orangered;
+}
+
+.distance, .contract, .payment, .safety {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+hr {
+    margin: 10px 0;
+}
 /* Responsive Behavior Below 991px: Reduce font size */
 @media (max-width: 991px) {
     /*info*/
@@ -153,6 +214,13 @@ li a:hover {
     .cal-button{
         font-size: 0.8em;
     }
+
+    .property-img {
+        height: auto;
+        min-height: 300px;
+    }
+    
+
 }
 
 /* Below 768px: Show Hamburger and hide normal nav */
@@ -210,6 +278,16 @@ li a:hover {
     #menu-toggle:checked ~ .nav-lists {
         display: flex;
     }
+    .property-title h2 {
+        font-size: 1.8rem;
+    }
+    .prop-back p {
+        font-size: 0.8rem;
+    }
+    .details {
+        width: 100%;
+    }
+
     .footer p{
         font-size: 0.9em;
         padding: 8px 5px;
@@ -221,6 +299,14 @@ li a:hover {
     .nav-lists li a {
         font-size: 1em;
     }
+
+    .property-title h2 {
+        font-size: 1.5rem;
+    }
+    .prop-back p {
+        font-size: 0.6rem;
+    }
+
     .footer p{
         font-size: 0.8em;
         padding: 8px 5px;
@@ -246,91 +332,6 @@ li a:hover {
     .header {
         grid-template-columns: 2fr 1fr;
     }
-}
-
-
-.property-ban{
-    position: relative;
-}
-
-
-.property-ban img{
-    margin-top: 20px;
-    width: 1500px;
-}
-
-.prop-back p{
-    background-color: white;
-    display: flex;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 30%;
-    left: 42%;
-
-}
-
-.property-title h2{
-    font-size: 3em;
-    color: white;
-    font-weight: bold;
-    position: absolute;
-    top: 45%;
-    left: 35%;
-}
-
-.propertydetails{
-    margin: 100px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 30px;
-    justify-content: space-around;
-    
-}
-
-
-.details{
-    height: 490px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    border: 1px solid grey;
-    background: white;
-    padding: 20px;
-
-}
-
-.distance, .contract, .payment, .safety{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    margin-top: 10px;
-
-}
-
-.distance i{
-    font-size: 2em;
-    color: orangered;
-    margin-top: 10px;
-}
-
-.contract i{
-    font-size: 2em;
-    color: orangered;
-    margin-top: 10px;
-}
-
-.payment i{
-    font-size: 2em;
-    color: orangered;
-    margin-top: 10px;
-}
-
-.safety i{
-    font-size: 2em;
-    color: orangered;
-    margin-top: 10px;
 }
 
 .propertydetail-content{

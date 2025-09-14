@@ -128,6 +128,26 @@ li a:hover {
     display: none;
 }
 
+
+.properties-ban {
+    margin-top: 20px;
+    height: 60vh; /* Makes the banner height relative to viewport */
+    overflow: hidden;
+}
+
+.properties-ban img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.prop-back p {
+    font-size: 1rem;
+}
+
+.properties-title h2 {
+    font-size: 3rem;
+}
+
 /* Responsive Behavior Below 991px: Reduce font size */
 @media (max-width: 991px) {
 
@@ -153,6 +173,10 @@ li a:hover {
     }
     .cal-button{
         font-size: 0.8em;
+    }
+    
+    .properties-title h2 {
+        font-size: 2.5rem;
     }
 }
 
@@ -212,6 +236,13 @@ li a:hover {
         display: flex;
     }
 
+    .prop-back p {
+        font-size: 1rem;
+    }
+    .properties-title h2 {
+        font-size: 2.5rem;
+    }
+
     .footer p{
         font-size: 0.9em;
         padding: 8px 5px;
@@ -223,6 +254,13 @@ li a:hover {
     .nav-lists li a {
         font-size: 1em;
     }
+    .properties-title h2 {
+        font-size: 2rem;
+    }
+    .prop-back p {
+        font-size: 0.5rem;
+    }
+
     .footer p{
         font-size: 0.8em;
         padding: 8px 5px;
@@ -253,31 +291,6 @@ li a:hover {
 
 
 
-.properties-ban{
-    position: relative;
-}
-.properties-ban img{
-    margin-top: 20px;
-    width: 1500px;
-}
-.prop-back p{
-    background-color: white;
-    display: flex;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 30%;
-    left: 45%;
-}
-.properties-title h2{
-    font-size: 3em;
-    color: white;
-    font-weight: bold;
-    position: absolute;
-    top: 45%;
-    left: 41%;
-}
 .best-head{
     margin-top: 50px;
 }
