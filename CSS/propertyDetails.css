@@ -210,12 +210,20 @@ li a:hover {
     #menu-toggle:checked ~ .nav-lists {
         display: flex;
     }
+    .footer p{
+        font-size: 0.9em;
+        padding: 8px 5px;
+    }
 }
 
 /* Smallest Screens - Below 576px */
 @media (max-width: 576px) {
     .nav-lists li a {
         font-size: 1em;
+    }
+    .footer p{
+        font-size: 0.8em;
+        padding: 8px 5px;
     }
 }
 
@@ -344,50 +352,37 @@ li a:hover {
 
 }
 
-.accordian{
-    margin-top: 50px;
+.accordian {
     border-radius: 5px;
 }
 
-.titles{
-    display: block;
+details {
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+summary {
+    cursor: pointer;
     padding: 10px;
-    border:2px solid lightslategray;
-    border-radius: 5px;
-}
-
-.titles:hover{
-    background-color: whitesmoke;
-}
-
-
-.item a{
-    text-decoration: none;
-    color: black;
+    list-style: none; /* Remove default arrow */
     position: relative;
+    font-weight: bold;
 }
 
-.subcontent{
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.6s ease;
-
+summary::-webkit-details-marker {
+    display: none; /* Remove default arrow on Chrome */
 }
 
-.subcontent p{
-    padding: 10px;
-}
-
-.subcontent:target{
-    max-height: 110px;
-    border: solid whitesmoke;
-    border-radius: 5px;
-
-}
-
-a span{
+summary span {
     position: absolute;
     right: 10px;
+}
+
+.subcontent {
+    padding: 10px;
+    background-color: whitesmoke;
 }
 
 
@@ -469,11 +464,14 @@ a span{
 }
 
 .footer{
-    margin-top:100px ;
+    margin-top: 100px;
     background-color: black;
     color: white;
-    height: 80px;
+    min-height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
 }

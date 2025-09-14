@@ -226,12 +226,21 @@ li a:hover {
     #menu-toggle:checked ~ .nav-lists {
         display: flex;
     }
+
+    .footer p{
+        font-size: 0.9em;
+        padding: 8px 5px;
+    }
 }
 
 /* Smallest Screens - Below 576px */
 @media (max-width: 576px) {
     .nav-lists li a {
         font-size: 1em;
+    }
+    .footer p{
+        font-size: 0.8em;
+        padding: 8px 5px;
     }
 
 }
@@ -348,12 +357,16 @@ li a:hover {
 .card-but button:hover{
     background-color: orangered;
 }
-.footer{
-    margin-top:100px ;
+
+.footer {
+    margin-top: 100px;
     background-color: black;
     color: white;
-    height: 80px;
+    min-height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
 }
