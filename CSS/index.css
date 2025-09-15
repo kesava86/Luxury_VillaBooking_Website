@@ -232,91 +232,114 @@ summary span {
 }
 
 
-.videoview{
-    width: 100wh;
-    height: 60vh;
+.videoview {
+    width: 100vw;
+    min-height: 70vh;
     margin-top: 80px;
-    background: url(../Images/video-bg.jpg);
-    background-repeat: no-repeat;
+    background: url(../Images/video-bg.jpg) no-repeat center center;
     background-size: cover;
     border-radius: 10px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
 }
-.video-head{
-    position: absolute;
-    left: 45%;
+
+.video-head h6 {
     color: red;
-    top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
-.video-content{
-    left: 38%;
-    position: absolute;
-    top: 50px;
-}
-.video-content h2{
+
+.video-content h2 {
     font-size: 2.5em;
     font-weight: bold;
     color: white;
+    margin: 5px 0;
 }
-.video-banner img{
-    width: 1100px;
-    height: 500px;
-    position: absolute;
-    left: 15%;
-    top: 40%;
+
+.video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.video-banner {
+    position: relative;
+    width: 80%;
+    max-width: 1100px;
+}
+
+.video-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
     border-radius: 10px;
 }
-.video-icon{
+
+.video-icon {
     position: absolute;
-    color: white;
+    top: 50%;
     left: 50%;
-    top: 85%;
+    transform: translate(-50%, -50%);
     font-size: 3em;
+    color: white;
     cursor: pointer;
 }
-.video-icon i{
+
+.video-icon i {
     background-color: orangered;
-    padding: 6px;
-    border-radius: 50px;
+    padding: 7px;
+    border-radius: 50%;
 }
-.cards{
-    margin-top: 300px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-items: center;
+  
+
+
+.cards {
+    margin-top: 550px;
 }
-.card-box{
+
+.card-box {
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: center;
-    align-items: center;
     background-color: rgb(243, 221, 181);
-    border-radius:10px ;
-    width: 250px;
-    height: 90px;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 120px;
     position: relative;
+    padding: 20px;
 }
-.box-content{
+
+.box-content {
     font-size: 2em;
     font-weight: bold;
     color: orangered;
 }
-.box-description{
+
+.box-description {
     font-weight: bold;
 }
-.circle{
+
+.circle {
     background-color: orangered;
     width: 40px;
     height: 40px;
-    border-radius: 25px;
+    border-radius: 50%;
     position: absolute;
     right: -13px;
     top: -13px;
 }
 
 .bestdeal {
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 30px;
 }
 
@@ -389,6 +412,122 @@ summary span {
     justify-content: space-between;
 }
 
+.properties{
+    margin-top: 100px;
+}
+.prop-main h5{
+    display: flex;
+    justify-content: center;
+    color: orangered;
+    margin-bottom: 20px;
+}
+.prop-sub h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.card-side{
+    display: flex;
+    justify-content: space-between;
+}
+.card-side p{
+    background-color: rgb(250, 155, 118);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.card-side span{
+    color: orangered;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.card-but{
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+.card-details{
+    display: flex;
+    gap: 20px;
+}
+.card-but button:hover{
+    background-color: orangered;
+}
+
+
+
+.contact {
+    margin-top: 100px;
+    background-image: url(../Images/contact-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+
+.contact-title h6 {
+    color: orangered;
+    font-weight: bold;
+}
+
+.contact-title h3 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.contact-info {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-info span {
+    font-size: 2em;
+    margin-right: 15px;
+    color: orangered;
+}
+
+.contact-form {
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.contact-form .btn {
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.5s ease;
+}
+
+.contact-form .btn:hover {
+    background-color: orangered;
+    border: none;
+}
+
+.contact-details {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 50px;
+}
+
 
 /* Responsive Behavior Below 991px: Reduce font size */
 @media (max-width: 991px) {
@@ -418,7 +557,13 @@ summary span {
     .icon{
         font-size: 1.4em;
     }
-        
+    .contact-title {
+        text-align: center;
+    }
+
+    .contact-details {
+        flex-direction: column;
+    }
     
 
 }
@@ -493,6 +638,7 @@ summary span {
     .icon{
         font-size: 1.4em;
     }
+    
 
     .footer p{
         font-size: 0.9em;
@@ -524,6 +670,16 @@ summary span {
     .icon{
         font-size: 1.4em;
     }
+    .contact {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .contact-title {
+        text-align: center;
+    }
+
+
 
 
     .footer p{
@@ -642,123 +798,4 @@ summary span {
         font-size: 1em;
     }
 
-}
-
-
-
-
-
-.properties{
-    margin-top: 100px;
-}
-.prop-main h5{
-    display: flex;
-    justify-content: center;
-    color: orangered;
-    margin-bottom: 20px;
-}
-.prop-sub h2{
-    display: flex;
-    justify-content: center;
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 50px;
-}
-.card-side{
-    display: flex;
-    justify-content: space-between;
-}
-.card-side p{
-    background-color: rgb(250, 155, 118);
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 5px;
-    font-weight: 500;
-}
-.card-side span{
-    color: orangered;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-.card-but{
-    display: flex;
-    justify-content: center;
-    border: none;
-}
-.card-details{
-    display: flex;
-    gap: 20px;
-}
-.card-but button:hover{
-    background-color: orangered;
-}
-.contact{
-    margin-top: 100px;
-    background-image: url(../Images/contact-bg.jpg);
-    height: 60vh;
-}
-.contact .contact-title{
-    padding: 20px;
-}
-.contact-main h6{
-    color: orangered;
-    display: grid;
-    justify-content: center;
-}
-.contact-sub h3{
-    display: grid;
-    justify-content: center;
-    color: white;
-    font-size: 2.5em;
-    font-weight: bold;
-}
-.contact-content{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 30px;
-}
-.contact-details{
-    display: flex;
-    gap: 20px;
-}
-.contact-info{
-    background-color: whitesmoke;
-    display: flex;
-    gap: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 5px;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-.contact-info span{
-    font-size: 2em;
-}
-.contact-form{
-    background-color: whitesmoke;
-    padding: 40px;
-    border-radius: 5px;
-}
-.contact-form .btn{
-    border-radius: 25px;
-    padding-left: 15px;
-    padding-right:15px;
-    border: none;
-    transition: background-color 0.5s ease;
-}
-.contact-form .btn:hover{
-    background-color: orangered;
-    border: none;
-}
-.footer {
-    margin-top: 350px;
-    background-color: black;
-    color: white;
-    min-height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    font-size: 1rem;
 }
