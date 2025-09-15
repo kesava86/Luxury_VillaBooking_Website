@@ -181,6 +181,9 @@ li a:hover {
     .cal-button{
         font-size: 0.8em;
     }
+    .icon{
+        font-size: 1.4em;
+    }
     
 }
 
@@ -247,6 +250,9 @@ li a:hover {
         font-size: 0.9rem;
     }
 
+    .icon{
+        font-size: 1.4em;
+    }
     .footer p{
         font-size: 0.9em;
         padding: 8px 5px;
@@ -263,6 +269,9 @@ li a:hover {
     }
     .contactus-back p {
         font-size: 0.6rem;
+    }
+    .icon{
+        font-size: 1.4em;
     }
     .footer p{
         font-size: 0.8em;
