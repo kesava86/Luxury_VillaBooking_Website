@@ -123,7 +123,6 @@ li a:hover {
     cursor: pointer;
 }
 
-/* Hide the checkbox */
 #menu-toggle {
     display: none;
 }
@@ -131,7 +130,7 @@ li a:hover {
 
 .properties-ban {
     margin-top: 20px;
-    height: 60vh; /* Makes the banner height relative to viewport */
+    height: 60vh; 
     overflow: hidden;
 }
 
@@ -148,7 +147,7 @@ li a:hover {
     font-size: 3rem;
 }
 
-/* Responsive Behavior Below 991px: Reduce font size */
+/* Responsive Behavior Below 991px*/
 @media (max-width: 991px) {
 
     /*info*/
@@ -183,14 +182,13 @@ li a:hover {
     }
 }
 
-/* Below 768px: Show Hamburger and hide normal nav */
 @media (max-width: 768px) {
 
     .info {
         flex-direction: column;
         margin-left: 0;
         gap: 10px;
-        font-size: 0.9em; /* Slight font size reduction for mobile */
+        font-size: 0.9em; 
     }
 
     .icons {

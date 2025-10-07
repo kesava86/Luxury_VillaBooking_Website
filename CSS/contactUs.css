@@ -156,7 +156,6 @@ li a:hover {
     border: none !important;
 }
 
-/* Responsive Behavior Below 991px: Reduce font size */
 @media (max-width: 991px) {
     /*info*/
     
@@ -187,14 +186,13 @@ li a:hover {
     
 }
 
-/* Below 768px: Show Hamburger and hide normal nav */
 @media (max-width: 768px) {
 
     .info {
         flex-direction: column;
         margin-left: 0;
         gap: 10px;
-        font-size: 0.9em; /* Slight font size reduction for mobile */
+        font-size: 0.9em; 
     }
 
     .icons {

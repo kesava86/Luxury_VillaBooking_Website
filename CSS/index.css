@@ -568,7 +568,6 @@ summary span {
 
 }
 
-/* Below 768px: Show Hamburger and hide normal nav */
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
